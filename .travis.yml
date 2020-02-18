@@ -41,7 +41,7 @@ install:
     - export ANDROID_NDK_HOME=$HOME/.android/android-ndk-r12b
     - export ANDROID_HOME=$HOME/.android/android-sdk-linux
     - export PATH=${ANDROID_NDK_HOME}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${PATH}
-    - cp local.properties.travis local.properties
+    - cp local.properties.github local.properties
 
 script:
     - sbt native-build android:package-release
